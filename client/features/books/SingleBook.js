@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import { fetchABookAsync } from '../../app/AbookSlice';
+import { StarRating } from '../index'
 
 const SingleBook = () => {
     const dispatch = useDispatch()
@@ -18,6 +19,7 @@ const SingleBook = () => {
         <div className='noteEntry'>
             <h1>{book.title}</h1>
             <img className="largeImg" src={book.image}/>
+            <StarRating/>
             <h2>{book.description}</h2>
         </div>
         </div>

@@ -212,3 +212,27 @@ a{
 .noteEntry h2{
   font-size: 16px;
 }
+
+button[type=button]{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width:50px;
+  height:50px
+}
+.on {
+  color: rgb(0, 0, 0);
+  width:50px;
+  height: 50px;
+}
+.off {
+  color: #ccc;
+  width:50px;
+  height: 50px;
+}
+
+.starRate{
+  display: flex;
+  background-color: transparent;
+}
