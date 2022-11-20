@@ -171,3 +171,44 @@ footer h2, h3, a,.footLink{
 a{
   color:#EEE2DF
 }
+
+.smallImg{
+  width:200px;
+  height:250px
+}
+
+.rec{
+  background-color: #C89F9C;
+}
+
+.rec div, .rec h2, .rec img{
+  background-color: #C89F9C;
+}
+
+.largeImg{
+  width:200px;
+  height:300px
+}
+
+.notebook{
+  background-image: url("https://media.istockphoto.com/id/973159420/vector/opened-aged-book-with-decorative-elements.jpg?s=612x612&w=0&k=20&c=nxdShMDAR9a1wyujmw8FTKTZ3tFixlMtkoIlE3M4HN4=");
+  width:100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.noteEntry{
+  display: flex;
+  background-color: transparent;
+  padding:100px;
+  padding-left:170px;
+}
+.noteEntry h1, .noteEntry h2{
+  background-color: transparent;
+  padding:20px
+}
+
+.noteEntry h2{
+  font-size: 16px;
+}

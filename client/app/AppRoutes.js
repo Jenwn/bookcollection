@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { CollectedBooks, WishBooks, SingleBook, ReadingLog } from '../features/index';
+import { CollectedBooks, WishBooks, SingleBook, ReadingLog, Front } from '../features/index';
 import AuthForm from '../features/auth/AuthForm';
 import Home from '../features/home/Home';
 import { me } from './store';
@@ -22,7 +22,7 @@ const AppRoutes = () => {
     <div>
       {isLoggedIn ? (
         <Routes>
-          <Route path="/*" element={<Home />} />
+          <Route path="/" element={<Front />} />
           <Route path="/home" element={<Home />} />
           <Route path="/collection" element={<CollectedBooks/>}/>
           <Route path="/wishlist" element={<WishBooks/>}/>
@@ -31,9 +31,13 @@ const AppRoutes = () => {
         </Routes>
       ) : (
         <Routes>
-          <Route
+          {/* <Route
             path="/*"
             element={<AuthForm name="login" displayName="Login" />}
+          /> */}
+          <Route
+            path="/"
+            element={<Front/>}
           />
           <Route
             path="/login"

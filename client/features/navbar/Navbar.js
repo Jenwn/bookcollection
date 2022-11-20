@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const logoutAndRedirectHome = () => {
     dispatch(logout());
-    navigate('/login');
+    navigate('/');
   };
 
   return (
@@ -18,7 +18,8 @@ const Navbar = () => {
         {isLoggedIn ? (
           <div className='navbar'>
             {/* The navbar will show these links after you log in */}
-            <Link to="/home" className='navLink'>Home</Link>
+            <Link to="/" className='navLink'>Home</Link>
+            <Link to="/home" className='navLink'>Search</Link>
             <Link to="/collection" className='navLink'>My Collection</Link>
             <Link to="/wishlist" className='navLink'>Wishlist</Link>
             <Link to="/readinglog" className='navLink'>Reading Log</Link>
@@ -27,10 +28,10 @@ const Navbar = () => {
             </button>
           </div>
         ) : (
-          <div>
+          <div className='navbar'>
             {/* The navbar will show these links before you log in */}
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign Up</Link>
+            <Link to="/login" className='navLink'>Login</Link>
+            <Link to="/signup" className='navLink'>Sign Up</Link>
           </div>
         )}
       </nav>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { fetchABookAsync } from '../../app/AbookSlice';
 
 const SingleBook = () => {
@@ -14,12 +14,13 @@ const SingleBook = () => {
     },[dispatch])
 
     return(
-        <>
-        <div>
+        <div className='notebook'>
+        <div className='noteEntry'>
             <h1>{book.title}</h1>
-
+            <img className="largeImg" src={book.image}/>
+            <h2>{book.description}</h2>
         </div>
-        </>
+        </div>
     )
 }
 
