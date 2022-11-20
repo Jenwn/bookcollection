@@ -13,13 +13,15 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <h1>FS-App-Template</h1>
-      <nav>
+    <div className='banner'>
+      <nav className='navigation'>
         {isLoggedIn ? (
-          <div>
+          <div className='navbar'>
             {/* The navbar will show these links after you log in */}
-            <Link to="/home">Home</Link>
+            <Link to="/home" className='navLink'>Home</Link>
+            <Link to="/collection" className='navLink'>My Collection</Link>
+            <Link to="/wishlist" className='navLink'>Wishlist</Link>
+            <Link to="/readinglog" className='navLink'>Reading Log</Link>
             <button type="button" onClick={logoutAndRedirectHome}>
               Logout
             </button>
@@ -32,7 +34,6 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-      <hr />
     </div>
   );
 };

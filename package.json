@@ -1,7 +1,7 @@
 {
-  "name": "fs-app-template",
+  "name": "bookjournal",
   "version": "2.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "Webapp for organizing book collection and journaling",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -26,6 +26,7 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "pg": "^8.8.0",
+    "react-spring": "^9.5.5",
     "sequelize": "^6.25.3"
   },
   "devDependencies": {

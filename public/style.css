@@ -1,3 +1,7 @@
+*{
+  font-family: 'Oxygen', sans-serif;
+  background: #EED7C5;
+}
 body {
   font-family: sans-serif;
 }
@@ -18,4 +22,148 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.allView,.collectedView{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+}
+.banner{
+  display: flex;
+}
+
+.searchedBooksView, .collectedBooksview{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search{
+  justify-self: center;
+}
+
+.aSearchedBook{
+  width: 20vw;
+  height: 70vh;
+  background: #C89F9C;
+  margin: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+  align-items: center;
+}
+
+.cbookview{
+  width: 15vw;
+  height: 30vh;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+  box-shadow: 0px 20px 0px 0px #b36a5e;
+}
+
+.shelfView{
+  width:10vw;
+  height: 30vh;
+}
+
+.shelfView:hover{
+  transform: scale(1.5);
+}
+
+input[type=text], input[type=password],input[type=search]{
+  padding: 12px 20px;
+  background-color: whitesmoke;
+}
+
+button{
+  padding: 12px;
+  background-color: #C97C5D;
+  color: #EEE2DF;
+}
+
+.logForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.notes{
+  padding: 12px 20px;
+  height: 300px;
+  font-size: 16px;
+}
+
+
+.banner{
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 58px 0px 1px #b36a5e;
+}
+
+.navbar{
+  background-color: #b36a5e;
+}
+.navLink {
+  background-color: #b36a5e;
+  color:#EEE2DF ;
+}
+
+ p,h1,h2,h3,h4{
+  background-color: #C89F9C;
+}
+
+.welcome,.instruction,.titled{
+  background-color: #EED7C5;
+}
+
+.logList{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:10px;
+}
+.entry h4,h2,h3,p,h4{
+  background-color: white;
+}
+.entry h3{
+  background-color: white;
+}
+
+.entry{
+  background-image: url("https://static.wixstatic.com/media/a6c6c2_2b104df833d74bbf9a91fc9c23192d8c~mv2.jpg/v1/fill/w_257,h_364,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a6c6c2_2b104df833d74bbf9a91fc9c23192d8c~mv2.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:1rem;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.logForm input, textarea{
+  background-color: whitesmoke;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding:20px;
+  text-align: center;
+  background-color: #b36a5e;
+}
+.space{
+  margin-top: 20px;
+  position:relative;
+  left:-150px;
+  top:30px;
+}
+
+footer h2, h3, a,.footLink{
+  background-color: #b36a5e;
 }
