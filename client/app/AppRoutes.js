@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { CollectedBooks, WishBooks, SingleBook, ReadingLog, Front, Stats, Bars } from '../features/index';
+import { CollectedBooks, WishBooks, SingleBook, ReadingLog, Front, Stats, Bars, Genre, Ratings } from '../features/index';
 import AuthForm from '../features/auth/AuthForm';
 import Home from '../features/home/Home';
 import { me } from './store';
@@ -30,6 +30,8 @@ const AppRoutes = () => {
           <Route path="/readinglog" element={<ReadingLog/>}/>
           <Route path="/stats/*" element={<Stats/>}/>
           <Route path="/stats" element={<Bars/>}/>
+          <Route path="/genres/*" element={<Genre/>}/>
+          <Route path="/ratings/*" element={<Ratings/>}/>
         </Routes>
       ) : (
         <Routes>
