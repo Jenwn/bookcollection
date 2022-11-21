@@ -23,6 +23,7 @@ const Navbar = () => {
             <Link to="/collection" className='navLink'>My Collection</Link>
             <Link to="/wishlist" className='navLink'>Wishlist</Link>
             <Link to="/readinglog" className='navLink'>Reading Log</Link>
+            <Link to="/stats">Stats</Link>
             <button type="button" onClick={logoutAndRedirectHome}>
               Logout
             </button>

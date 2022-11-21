@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { CollectedBooks, WishBooks, SingleBook, ReadingLog, Front } from '../features/index';
+import { CollectedBooks, WishBooks, SingleBook, ReadingLog, Front, Stats, Bars } from '../features/index';
 import AuthForm from '../features/auth/AuthForm';
 import Home from '../features/home/Home';
 import { me } from './store';
@@ -28,6 +28,8 @@ const AppRoutes = () => {
           <Route path="/wishlist" element={<WishBooks/>}/>
           <Route path="/collection/:bookid" element={<SingleBook/>}/>
           <Route path="/readinglog" element={<ReadingLog/>}/>
+          <Route path="/stats/*" element={<Stats/>}/>
+          <Route path="/stats" element={<Bars/>}/>
         </Routes>
       ) : (
         <Routes>
