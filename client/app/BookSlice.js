@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
 import axios from "axios"
+import { key } from "./thekey"
 
 const initialState = {
     books: [],
@@ -11,7 +12,7 @@ const initialState = {
 
 export const fetchBooksAsync = createAsyncThunk("allBooks", async(search)=>{
     try{
-        const { data } = await axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyCLQ-IdBGIrZ7hufT5p8_wlfM7Y_gLlba4'+'&maxResults=40')
+        const { data } = await axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+`&key=${key}`+'&maxResults=40')
         return data.items
 
     }catch(err){
