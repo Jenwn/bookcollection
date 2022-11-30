@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "description": "Webapp for organizing book collection and journaling",
   "main": "index.js",
-  "homepage":"http://Jenwn.github.io/bookcollection",
   "scripts": {
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode=development",
@@ -16,9 +15,7 @@
     "test": "NODE_ENV=test JWT=a_secret mocha \"./server/**/*.spec.js\" \"./client/**/*.spec.js\" --require @babel/register --require esm ",
     "test:dev": "npm run test -- --watch",
     "test:dev:models": "npm run test:dev -- --grep=model",
-    "test:dev:routes": "npm run test:dev -- --grep=route",
-    "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "test:dev:routes": "npm run test:dev -- --grep=route"
   },
   "author": "Fullstack Academy of Code",
   "license": "MIT",
@@ -32,7 +29,9 @@
     "pg": "^8.8.0",
     "react-chartjs-2": "^5.0.1",
     "react-spring": "^9.5.5",
-    "sequelize": "^6.25.3"
+    "sequelize": "^6.25.3",
+    "socket.io": "^4.5.4",
+    "socket.io-client": "^4.5.4"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
@@ -45,7 +44,6 @@
     "babel-loader": "^8.2.5",
     "chai": "^4.3.6",
     "esm": "^3.2.25",
-    "gh-pages": "^4.0.0",
     "mocha": "^10.1.0",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
