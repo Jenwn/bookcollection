@@ -35,7 +35,11 @@ async function seed() {
       Books.create({title: "Alice's Adventures in Wonderland & Through the Looking-Glass",
       author: "Lewis Carroll",
       description: "' I can't explain myself, I'm afraid, sir,' said Alice, 'Because I'm not myself, you see.'When Alice sees a white rabbit take a watch out of its waistcoat pocket she decides to follow it, and a sequence of most unusual events is set in motion. This mini book contains the entire topsy-turvy stories of Alice's Adventures in Wonderland and Through the Looking-Glass, accompanied by practical notes and Martina Pelouso's memorable full-colour illustrations.",
-      image: "https://images.gr-assets.com/books/1327872220l/24213.jpg",status:"wishlist", userId:mango.id})
+      image: "https://images.gr-assets.com/books/1327872220l/24213.jpg",status:"wishlist", userId:mango.id}),
+      Books.create({title: "Alice",
+      author: "Lewis Carroll",
+      description: "' I can't explain myself, I'm afraid, sir,' said Alice, 'Because I'm not myself, you see.'When Alice sees a white rabbit take a watch out of its waistcoat pocket she decides to follow it, and a sequence of most unusual events is set in motion. This mini book contains the entire topsy-turvy stories of Alice's Adventures in Wonderland and Through the Looking-Glass, accompanied by practical notes and Martina Pelouso's memorable full-colour illustrations.",
+      image: "https://images.gr-assets.com/books/1327872220l/24213.jpg",status:"wishlist", userId:users[0].id})
       ,
       Books.create({title: "Les Misérables",
       author: "Victor Hugo",
